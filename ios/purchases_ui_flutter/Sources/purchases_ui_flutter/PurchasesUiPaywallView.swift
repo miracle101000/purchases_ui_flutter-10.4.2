@@ -83,9 +83,9 @@ class PurchasesUiPaywallView: NSObject, FlutterPlatformView {
         if let displayCloseButton = argsDictionary?["displayCloseButton"] as? Bool {
             paywallViewController.update(with: displayCloseButton)
         }
-        if let theme = argsDictionary?["theme"] as? String {
-        _view.userInterfaceStyle = theme == "dark" ? .dark : .light
-        }
+        // if let theme = argsDictionary?["theme"] as? String {
+        // _view.userInterfaceStyle = theme == "dark" ? .dark : .light
+        // }
         _paywallViewController = paywallViewController
         _view = ViewControllerWrapper(
             viewController: paywallViewController,
